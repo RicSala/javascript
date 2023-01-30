@@ -55,6 +55,16 @@ const reduceArray2 = numbers.reduce(
 )
 console.log(reduceArray2)
 
+// INCLUDES
+// Check the array (or string) and return true if it contains the provided value
+console.log(numbers.includes(1)); // true
+console.log(numbers.includes('1')); // false --> no type coercion
+
+let name = "Ricardo Sala"
+console.log(name.includes(" ")); // true
+
+
+
 // ToDo:
 // - Spread operator
  

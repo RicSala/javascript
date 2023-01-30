@@ -19,6 +19,12 @@
 // >
 // >
 
+// OPERATORS
+// ---------------------
+// Apart from the classic +, -, /, *. ES7 (ES2016) introduced ** (the exponential operator)
+
+console.log(2 ** 3); // 8
+
 // LOGICAL OPERATORS
 // ---------------------
 // &&
