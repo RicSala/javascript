@@ -1,3 +1,8 @@
+// THE ROADMAP
+// - https://www.youtube.com/watch?v=57GuRoJ5Bfw
+// - https://www.youtube.com/watch?v=aeKQy_08fpk
+
+
 // TYPES
 // ---------------------
 
