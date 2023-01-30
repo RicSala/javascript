@@ -57,5 +57,11 @@ for (sibling in sibsObject) {
     console.log(sibling);
 }
 
+// We can also use this one with Arrays
+for (sibling in sibsArray) {
+    console.log(sibsArray[sibling]);
+}
+
+
 
 // [Q]: ToDo: Iterables vs enumerables

@@ -8,6 +8,7 @@
 // 5. Null
 // 6. Symbol (New in ECMAScript 6)
 // 7. Object
+// 8. BigInt
 
 
 // COMPARISONS
