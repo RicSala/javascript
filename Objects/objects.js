@@ -176,6 +176,20 @@ Object.entries(team).forEach((player) => {
 console.log(namesArray3);
 
 
+// FROMENTRIES
+// Given an array of arrays, it returns an object using the values of the array ([0]: keys, [1]: values)
+
+let agesArray = [["Ricardo", 37], ["Mamen", 39], ["Pablo", 30]];
+console.log(agesArray);
+
+let agesObject = Object.fromEntries(agesArray);
+console.log(agesObject);
+
+// and we could go back to array using Object.entries...
+let newAgesArray = [];
+newAgesArray = Object.entries(agesObject);
+console.log(newAgesArray);
+
 
 // Reference:
 // For reference values vs primitives: https://ui.dev/primitive-vs-reference-values-in-javascript
