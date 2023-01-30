@@ -132,7 +132,50 @@ const wizard1 = new Wizard("Ricardo", "levitate"); // This is instantiation
 wizard1.introduce();
 wizard1.magicTrick();
 
-// 
+
+// Object.keys, .values and . entries.
+
+// Let's say we want to interate this object and get an array with the name of all the players.
+let team = {
+    Captain: "Santa",
+    Goalkeeper: "Rudolf",
+    Cheerleader: "Grich"
+}
+
+// Object.keys --> given an object, it returns an array with the keys of properties
+// before ES8, this is how it was done:
+
+let namesArray = [];
+
+Object.keys(team).forEach((player) => {
+    namesArray.push(team[player]);
+})
+
+console.log(namesArray);
+
+// Object.values --> given an object, it returns an array with the values of properties. ES8 (2017)
+// now we can access the values of the object without using the keys
+
+let namesArray2 = [];
+
+Object.values(team).forEach((player) => {
+    namesArray2.push(player)
+});
+
+console.log(namesArray2);
+
+
+// Object.entries --> given an object, it returns an array of arrays, in which [0] has the property keys and [1] the property values ES8 (2017)
+// so we could could do...
+
+let namesArray3 = [];
+
+Object.entries(team).forEach((player) => {
+    namesArray3.push(`${player[0]} - ${player[1]}`);
+})
+console.log(namesArray3);
+
+
 
 // Reference:
 // For reference values vs primitives: https://ui.dev/primitive-vs-reference-values-in-javascript
