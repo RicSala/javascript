@@ -53,4 +53,8 @@ const reduceArray2 = numbers.reduce(
     (accumulator, num) => (num + 1) * 2,
     1
 )
-console.log(reduceArray2);
+console.log(reduceArray2)
+
+// ToDo:
+// - Spread operator
+ 
