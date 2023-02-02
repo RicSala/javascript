@@ -190,6 +190,58 @@ let newAgesArray = [];
 newAgesArray = Object.entries(agesObject);
 console.log(newAgesArray);
 
+// OBJECT SPREAD OPERATOR
+// REFERENCE: https://www.javascripttutorial.net/es-next/javascript-object-spread/
+
+// In ES6, we had the spread operator (...) to unpack elements of an array. It is useful for things like...
+// copying arrays(Remember that arrays are reference objects, so we cannot do const cloneArray = oldArray as this will results on to varaibles pointing to the same object)
+
+const oldArray = [0, 1, 2, 3]
+const newArray = [...oldArray]
+console.log("new Array: ", newArray); // [0, 1, 2, 3]
+
+// now (ES2018) the spread operator is also available for objects
+
+// So we can copy...
+const oldRectangle = {
+    height: 10,
+    width: 20
+}
+
+const newRetangle = { ...oldRectangle };
+
+console.log(newRetangle) // {heigh: 10, width: 20}
+
+// copy adding new properties...
+
+const coloredRectangle = {
+    ...newRetangle,
+    color: "blue"
+}
+
+console.log(coloredRectangle); // {height: 10, width: 20, color: 'blue'}
+
+// merge two objects...
+
+const style = {
+    color: "blue",
+    border: "none"
+}
+
+const styledRectangle = {
+    ...newRetangle,
+    ...style,
+}
+console.log(styledRectangle); //{height: 10, width: 20, color: 'blue', border: 'none'}
+
+//...or even "decompose" objects:
+
+const { color, border, ...nonStyledRectangle } = styledRectangle;
+
+console.log(nonStyledRectangle); //{height: 10, width: 20}
+
+
+
 
 // Reference:
 // For reference values vs primitives: https://ui.dev/primitive-vs-reference-values-in-javascript
