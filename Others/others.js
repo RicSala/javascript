@@ -69,4 +69,6 @@ if (!(false || 0)) {
 // //     console.log("at least one operand is true");
 // // }
 
-// [Q]: ToDo: review the ?? 
+// [Q]: ToDo: review the ??
+
+// REVIEW OF NEW FEATURES: https://github.com/daumann/ECMAScript-new-features-list
